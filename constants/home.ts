@@ -1,7 +1,7 @@
  export const focusAreas = [
     {
       id: 1,
-      href: "/pages/quality-education",
+      href: "/pages/what-we-do/quality-education",
       img: "/quality-education.jpg",
       title: "Quality Education",
       description:
@@ -9,7 +9,7 @@
     },
     {
       id: 2,
-      href: "/pages/peace-and-harmony",
+      href: "/pages/what-we-do/peace-and-harmony",
       img: "/peace-harmony.jpg",
       title: "Peace and Harmony",
       description:
@@ -17,7 +17,7 @@
     },
     {
       id: 3,
-      href: "/pages/youth-empowerment",
+      href: "/pages/what-we-do/youth-empowerment",
       img: "/youth.jpeg",
       title: "Youth Empowerment",
       description:
@@ -25,7 +25,7 @@
     },
     {
       id: 4,
-      href: "/pages/humanitarian-aid",
+      href: "/pages/what-we-do/humanitarian-aid",
       img: "/Humanitarian-Aid.jpeg",
       title: "Humanitarian Aid",
       description:

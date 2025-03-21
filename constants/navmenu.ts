@@ -38,19 +38,19 @@ export const whoweare: { id: number; title: string; href: string; description: s
   export const getinvolves: { title: string; href: string; description: string }[] = [
     {
       title: "Donate",
-      href: "#",
+      href: "/pages/get-involve/donate",
       description:
         "A modal dialog that interrupts the user with important content and expects a response.",
     },
     {
       title: "Volunteer",
-      href: "#",
+      href: "/pages/get-involve/volunteer",
       description:
         "For sighted users to preview content available behind a link.",
     },
     {
       title: "Careers",
-      href: "#",
+      href: "/pages/get-involve/careers",
       description:
         "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     },
@@ -59,25 +59,25 @@ export const whoweare: { id: number; title: string; href: string; description: s
   export const whatwedo: { title: string; href: string; description: string }[] = [
     {
       title: "Quality Education",
-      href: "/pages/quality-education",
+      href: "/pages/what-we-do/quality-education",
       description:
         "A modal dialog that interrupts the user with important content and expects a response.",
     },
     {
       title: "Peace and Harmony",
-      href: "/pages/peace-and-harmony",
+      href: "/pages/what-we-do/peace-and-harmony",
       description:
         "For sighted users to preview content available behind a link.",
     },
     {
       title: "Youth Empowerment",
-      href: "/pages/youth-empowerment",
+      href: "/pages/what-we-do/youth-empowerment",
       description:
         "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     },
     {
       title: "Humanitarian Aid",
-      href: "/pages/humanitarian-aid",
+      href: "/pages/what-we-do/humanitarian-aid",
       description:
         "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     },
