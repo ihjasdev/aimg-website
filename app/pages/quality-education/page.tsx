@@ -1,6 +1,7 @@
-import { Link } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import { Link } from "lucide-react";
+
 
 const QualityEducation = () => {
   return (
@@ -11,14 +12,15 @@ const QualityEducation = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-200 to-cyan-800" />
 
         {/* Content */}
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-28">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-6 sm:py-16 lg:py-24">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
-              Quality Education
+              Youth Empowerment
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              Ensure inclusive and equitable quality education and promote
-              lifelong learning opportunities for all.
+              We work to provide young people with the tools, resources, and
+              services they need to succeed and build a brighter future for
+              themselves and their communities.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link

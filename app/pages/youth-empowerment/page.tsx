@@ -71,64 +71,62 @@ const YouthEmpowerment = () => {
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg">
                   <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                    Peace and Harmony
+                    Youth Empowerment
                   </h1>
                   <p className="mt-6 text-gray-700 text-justify">
-                    Sri Lanka is a multi-ethnic country. The country is
-                    inhabited by followers of four of the world&apos;s major
-                    religions. Multi-ethnic cultures, languages, religions, and
-                    diverse characteristics are found in this country.
-                    Characteristics like coexistence, unity, and understanding
-                    are seen as the first basic thing for the development of Sri
-                    Lanka.
+                    Youths are important strengths for our prosperous country
+                    Sri Lanka. Every young person has different strengths,
+                    characteristics, and personalities. People who can face
+                    crisis situations. The future leaders of our motherland. The
+                    power of the youth is the basis for the various changes that
+                    have taken place in the world.
                     <br />
                     <br />
-                    Sri Lanka was subjected to thirty years of armed conflict
-                    due to such rifts in Sri Lanka&apos;s past history. Due to this,
-                    Sri Lanka was backward economically, politically, and
-                    socially.
+                    It is AIMG&apos;s aim to make effective use of this great
+                    season. Young people dream of a future for themselves and
+                    tend to find ways to achieve it. That is why AIMG strives to
+                    empower youth to achieve a better future for them.
                   </p>
                 </div>
               </div>
             </div>
             <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
               <Image
-              width={400}
+                width={400}
                 height={400}
                 alt="Youth Empowerment"
                 src="/youth-empowerment.jpeg"
                 className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
               />
-            
-          </div>
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div className="lg:pr-4">
-              <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify">
-                <p>
-                  AIMG has been carrying out work programs aimed at building the
-                  qualities of understanding and unity among communities with a
-                  view to building coexistence.
-                </p>
-                <p className="mt-8">
-                  AIMG also aims to implement programs such as skill
-                  development, career guidance, and scholarship schemes, along
-                  with students in schools, universities, colleges, and
-                  vocational training institutes along with graduates.
-                  <br />
-                  <br/>
-                  AIMG is trying to create awareness among the people about a
-                  certain society that is becoming selfish through the division
-                  in the society which is hindering the development of our
-                  country.
-                  <br />
-                  <br/>
-                  AIMG prepares the rising young generation for a prosperous
-                  future with social understanding and thinking about the future
-                  of the country.
-                </p>
+            </div>
+            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="lg:pr-4">
+                <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify">
+                  <p>
+                    We try to identify their strengths and potential and train
+                    them accordingly. We want to create mentally and morally
+                    strong, well-educated, skilled professionals and active
+                    citizens in Sri Lanka. We are trying to eliminate the
+                    weakness and disorder among the youth. We have designed many
+                    programs for their future needs such as industrial and
+                    educational sectors, proper guidance and counseling, etc.
+                  </p>
+                  <p className="mt-8">
+                    We have designed many programs to strengthen the connection
+                    between the personalities found in the community and the
+                    people. AIMG&apos;s mission is to develop talented and
+                    resourceful individuals who are relevant to Sri Lanka as a
+                    whole.
+                    <br />
+                    <br />
+                    AIMG is trying to create awareness among the people about a
+                    certain society that is becoming selfish through the
+                    division in the society which is hindering the development
+                    of our country.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 import { cn } from "@/lib/utils"
 import {
@@ -13,86 +14,31 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
+import { whatwedo, whoweare, getinvolves } from "@/constants/navmenu"
 
-const whoweare: { id: number; title: string; href: string; description: string }[] = [
-  {
-    id: 1,
-    title: "Our History",
-    href: "/pages/who-we-are/our-history",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    id: 2,
-    title: "Board of Directors",
-    href: "/pages/who-we-are/board-of-directors",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    id: 3,
-    title: "Our Team",
-    href: "/pages/who-we-are/our-team",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    id: 4,
-    title: "Vision & Mission",
-    href: "/pages/who-we-are/vision-mission",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    id: 5,
-    title: "Partners",
-    href: "/pages/who-we-are/partners",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-]
-const getinvolves: { title: string; href: string; description: string }[] = [
-  {
-    title: "Donate",
-    href: "#",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Volunteer",
-    href: "#",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Careers",
-    href: "#",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-]
+
 
 export function NavMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
-          <Link href="/pages/what-we-do" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              What We Do
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Who We Are</NavigationMenuTrigger>
+          <NavigationMenuTrigger>What We Do</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-            <li className="row-span-3 bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-md">
+            <li className="row-span-4 rounded-md">
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
+                    <Image
+                      alt="welford icon"
+                      height="50"
+                      width="50"
+                      src="/aimg_icon.svg"
+                    />
+
                     {/* < className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
                       AIMG
@@ -104,6 +50,23 @@ export function NavMenu() {
                   </Link>
                 </NavigationMenuLink>
               </li>
+              {whatwedo.map((whatwedo) => (
+                <ListItem
+                  key={whatwedo.title}
+                  title={whatwedo.title}
+                  href={whatwedo.href}
+                >
+                  {whatwedo.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Who We Are</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            
               {whoweare.map((whoweare) => (
                 <ListItem
                   key={whoweare.id}
