@@ -7,7 +7,7 @@ export const careerPosts = [
       location: "Colombo, Sri Lanka",
       type: "Full-time",
       deadline: "2025-04-15",
-      imageUrl: "https://example.com/images/software-engineer.jpg",
+      src: "/hiring.jpg",
     },
     {
       id:2,
@@ -17,7 +17,7 @@ export const careerPosts = [
       location: "Remote",
       type: "Full-time",
       deadline: "2025-04-10",
-      imageUrl: "https://example.com/images/cyber-security.jpg",
+      src: "/hiring.jpg",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export const careerPosts = [
       location: "Kinniya, Sri Lanka",
       type: "Contract",
       deadline: "2025-04-20",
-      imageUrl: "https://example.com/images/project-manager.jpg",
+      src: "/hiring.jpg",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export const careerPosts = [
       location: "Colombo, Sri Lanka",
       type: "Part-time",
       deadline: "2025-04-12",
-      imageUrl: "https://example.com/images/ui-ux-designer.jpg",
+      src: "/hiring.jpg",
     },
     {
       id: 5,
@@ -47,6 +47,6 @@ export const careerPosts = [
       location: "Hybrid (Colombo/Remote)",
       type: "Full-time",
       deadline: "2025-04-18",
-      imageUrl: "https://example.com/images/marketing-specialist.jpg",
+      src: "/hiring.jpg",
     },
   ];
