@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 
 const QualityEducation = () => {
@@ -29,6 +29,7 @@ const QualityEducation = () => {
               >
                 Donate Now
               </Link>
+             
             </div>
           </div>
         </div>
