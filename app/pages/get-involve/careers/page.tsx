@@ -1,20 +1,21 @@
 import Link from "next/link";
-import { title } from "process";
+// import { title } from "process";
 import React from "react";
 import { careerPosts } from "@/constants/careers";
+import Image from "next/image";
 // import { collection, getDocs } from "firebase/firestore";
 // import { db } from "@/lib/firebaseConfig";
 
-// Define the type for career posts
-interface CareerPost {
-  id: string;
-  title: string;
-  description: string;
-  location: string;
-  type: string;
-  deadline: string;
-  imageUrl: string;
-}
+// // Define the type for career posts
+// interface CareerPost {
+//   id: string;
+//   title: string;
+//   description: string;
+//   location: string;
+//   type: string;
+//   deadline: string;
+//   imageUrl: string;
+// }
 
 // // Fetch career posts from Firestore
 // async function getCareerPosts() {
@@ -61,10 +62,12 @@ const CareersPage = () => {
                 className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow"
               >
                 <div className="h-48 relative">
-                  <img
+                  <Image
                     src={post.imageUrl}
                     alt={post.title}
                     className="w-full h-full object-cover"
+                    width={300}
+                    height={200}
                   />
                 </div>
                 <div className="p-6">
