@@ -3,28 +3,34 @@ import React from "react";
 
 const donationDetails = [
   {
-    title: "Account Name :",
+    title: "Account Name",
     subtitle: "Ambitious Institution for Moral Generation",
+    icon: "👤"
   },
   {
-    title: "Account Number :",
+    title: "Account Number",
     subtitle: "001 0470914 001",
+    icon: "🔢"
   },
   {
-    title: "Bank Name :",
+    title: "Bank Name",
     subtitle: "Amana Bank PLC",
+    icon: "🏦"
   },
   {
-    title: "Branch :",
+    title: "Branch",
     subtitle: "Kinniya",
+    icon: "📍"
   },
   {
-    title: "Address :",
+    title: "Address",
     subtitle: "486, Galle Road, Colombo -03, Sri Lanka",
+    icon: "📮"
   },
   {
-    title: "BIC/SWIFT :",
+    title: "BIC/SWIFT",
     subtitle: "AMNALKLX",
+    icon: "🌐"
   },
 ];
 
@@ -53,26 +59,36 @@ const page = () => {
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Contact Information */}
+            {/* Donation Information */}
             <Image
               width={460}
               height={500}
-              alt="feature"
+              alt="Donation Image"
               className="object-cover object-center h-full w-full rounded-2xl"
               src="/donation.jpg"
             />
 
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl p-8">
-              {donationDetails.map((donationDetail) => (
-                <div
-                  key={donationDetail.title}
-                  className="text-xl font-semibold text-slate-900 mb-6 text-center"
-                >
-                  <h1>{donationDetail.title}</h1>
-                  <strong>{donationDetail.subtitle}</strong>
-                </div>
-              ))}
+            <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 shadow-sm">
+              <h2 className="text-2xl font-bold text-center mb-8 text-slate-900">Bank Details</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {donationDetails.map((detail) => (
+                  <div
+                    key={detail.title}
+                    className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-2xl">{detail.icon}</span>
+                      <h3 className="text-sm font-medium text-gray-500">
+                        {detail.title}
+                      </h3>
+                    </div>
+                    <p className="text-slate-900 font-semibold break-words">
+                      {detail.subtitle}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
