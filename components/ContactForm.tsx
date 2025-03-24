@@ -33,32 +33,6 @@ const FormSchema = z.object({
   }),
 });
 
-const details: {
-    id: number;
-  name: "Name" | "Email" | "Phone" | "Subject" | "Message";
-  value: string;
-}[] = [
-  {
-    id: 1,
-    name: "Name",
-    value: "Enter your name",
-  },
-  {
-    id: 2,
-    name: "Email",
-    value: "abc@example.com",
-  },
-  {
-    id: 3,
-    name: "Phone",
-    value: "Enter your phone number",
-  },
-  {
-    id: 4,
-    name: "Subject",
-    value: "Enter your subject",
-  },
-];
 const ContactForm = () => {
   // 1. Define your form.
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -81,31 +55,90 @@ const ContactForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        {details.map((detail) => (
-          <FormField
-            key={detail.id}
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-sm font-medium text-slate-700">
-                  {detail.name}
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder={detail.value}
-                    {...field}
-                    className="rounded-lg border-slate-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        ))}
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium text-slate-700">
+                Name
+              </FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter your name"
+                  {...field}
+                  className="rounded-lg border-slate-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
-<FormField
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium text-slate-700">
+                Email
+              </FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter your email"
+                  type="email"
+                  {...field}
+                  className="rounded-lg border-slate-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium text-slate-700">
+                Phone
+              </FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter your phone number"
+                  type="tel"
+                  {...field}
+                  className="rounded-lg border-slate-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium text-slate-700">
+                Subject
+              </FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter subject"
+                  {...field}
+                  className="rounded-lg border-slate-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
           control={form.control}
           name="message"
           render={({ field }) => (
@@ -118,16 +151,23 @@ const ContactForm = () => {
                   placeholder="Type your message here"
                   {...field}
                   className="rounded-lg border-slate-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
-                  rows={5}
+                  rows={4}
                 />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+
+        <Button
+          type="submit"
+          className="w-full rounded-lg bg-cyan-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Submit
+        </Button>
       </form>
     </Form>
   );
 };
+
 export default ContactForm;
