@@ -11,6 +11,8 @@ import NewsletterCTA from "@/components/NewsletterCTA";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
+import ScrollToTop from "@/components/ScrollToTop"; // Adjust path if needed
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,6 +50,7 @@ export default function RootLayout({
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <main className="flex-1">{children}</main>
+      <ScrollToTop />
       <NewsletterCTA />
       <Footer />
       

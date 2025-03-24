@@ -6,8 +6,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Contact Us | AIMGeneration",
-  description:
-    "Contact US",
+  description: "Contact US",
 };
 
 const ContactPage = () => {
@@ -34,8 +33,8 @@ const ContactPage = () => {
               Contact Us
             </h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              We are here to help you with all your cybersecurity and Identity &
-              Access Governance needs.
+              Our friendly team would love to hear from participants, care
+              partners, volunteers, sponsors, and more!
             </p>
           </div>
         </div>

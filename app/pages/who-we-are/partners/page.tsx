@@ -49,6 +49,7 @@ const PartnersPage = () => {
               <div
                 key={partner.id}
                 className="flex items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                data-aos="zoom-in-up"
               >
                 <div className="relative h-40 w-full">
                   <Image

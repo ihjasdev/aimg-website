@@ -22,12 +22,7 @@ const AdvisoryBoard = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-4">Advisory Board</h1>
-      
-      <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
-        Teamwork makes the dream work. The implementation of the new leadership team has strengthened our commitment to our mission.
-      </p>
+    <div className="max-w-6xl mx-auto px-4 py-24">
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {boardMembers.map((member, index) => (
@@ -52,11 +47,12 @@ const AdvisoryBoard2 = ({ member }: { member: Member }) => {
       className="flex flex-col items-center transition-all duration-300 ease-in-out transform hover:scale-105"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      data-aos="flip-left"
     >
       <div 
         className={`rounded-lg overflow-hidden mb-4 w-48 h-48 shadow-md transition-all duration-300 ${
           isHovered ? 'shadow-xl' : ''
-        }`}
+        }`} 
       >
         <Image 
           width={300}
