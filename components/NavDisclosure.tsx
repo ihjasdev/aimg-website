@@ -56,17 +56,17 @@ function NavDisclosure() {
           <ChevronDown className="size-6  group-data-[hover]:fill-slate-500 group-data-[open]:rotate-180" />
         </DisclosureButton>
         <DisclosurePanel className="mt-2 space-y-1 py-2 text-lg font-medium text-slate-900">
-          <Link href="/donate">
+          <Link href="/pages/get-involve/donate">
             <span className="block rounded-md p-2 hover:bg-gradient-to-b from-muted/50 to-muted">
               Donate
             </span>
           </Link>
-          <Link href="/volunteer">
+          <Link href="/pages/get-involve/volunteer">
             <span className="block rounded-md p-2 hover:bg-gradient-to-b from-muted/50 to-muted">
               Volunteer
             </span>
           </Link>
-          <Link href="/careers">
+          <Link href="/pages/get-involve/careers">
             <span className="block rounded-md p-2 hover:bg-gradient-to-b from-muted/50 to-muted">
               Careers
             </span>
@@ -75,7 +75,7 @@ function NavDisclosure() {
       </Disclosure>
       <Disclosure as="div" className="mt-10 border-0 border-none">
         <DisclosureButton className="group flex w-full items-center justify-between">
-          <Link href="/contact-us">
+          <Link href="/pages/contact-us">
             <span className="text-xl font-semibold text-slate-900">
               Contact us
             </span>

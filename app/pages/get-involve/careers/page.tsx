@@ -63,7 +63,7 @@ const CareersPage = () => {
               >
                 <div className="h-48 relative">
                   <Image
-                    src={post.imageUrl}
+                    src={post.src}
                     alt={post.title}
                     className="w-full h-full object-cover"
                     width={300}
