@@ -30,22 +30,22 @@ export const whatwedo: { id: number; title: string; href: string; }[] = [
   {
     id: 1,
     title: "Quality Education",
-    href: "/pages/quality-education",
+    href: "/pages/what-we-do/quality-education",
   },
   {
     id: 2,
     title: "Peace and Harmony",
-    href: "/pages/peace-and-harmony",
+    href: "/pages/what-we-do/peace-and-harmony",
   },
   {
     id: 3,
     title: "Youth Empowerment",
-    href: "/pages/youth-empowerment",
+    href: "/pages/what-we-do/youth-empowerment",
   },
   {
     id: 4,
     title: "Humanitarian Aid",
-    href: "/pages/humanitarian-aid",
+    href: "/pages/what-we-do/humanitarian-aid",
   },
   
 ];
