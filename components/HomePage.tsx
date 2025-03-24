@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <main className="bg-white">
       <section className="relative inset-0 bg-gradient-to-br from-cyan-200 to-cyan-800 mx-3 sm:mx-4 lg:mx-16 mt-4 sm:mt-6 lg:mt-8 rounded-2xl sm:rounded-3xl overflow-hidden">
-        <div className="absolute inset-0 bg-cyan-100 opacity-20">
+        <div className="absolute inset-0 bg-cyan-100 opacity-40">
           {/* Shadcn Carousel Component */}
           <div className="relative w-full h-full">
             <Carousel
@@ -26,7 +26,7 @@ const HomePage = () => {
               <CarouselContent>
                 {carouselImages.map((image, index) => (
                   <CarouselItem key={index} className="md:basis-1/1">
-                    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
+                    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[400px] lg:h-[550px]">
                       <Image
                         src={image.src}
                         alt={image.alt}
@@ -44,7 +44,7 @@ const HomePage = () => {
 
         {/* Content overlay - Update positioning and padding */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-24">
-          <div className="text-center">
+          <div className="text-center ">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
               Empowering Communities, Inspiring Generations.
             </h1>
@@ -67,23 +67,17 @@ const HomePage = () => {
       </section>
 
       <section className="text-gray-600 body-font" data-aos="fade-up">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div
-            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-            // data-aos="fade-right"
-          >
+        <div className="container mx-auto flex px-12 py-24 md:flex-row flex-col items-center">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <Image
-              className="object-cover object-center rounded"
+              className="object-cover object-center rounded-xl"
               alt="hero"
               src="/intro.jpg"
               width="720"
               height="600"
             />
           </div>
-          <div
-            // data-aos="fade-left"
-            className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
-          >
+          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               About Ambitious Institution for Moral Generation
             </h1>

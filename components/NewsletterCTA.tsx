@@ -59,8 +59,8 @@ const NewsletterCTA = () => {
   };
 
   return (
-    <section className="bg-cyan-100 py-16 px-4 sm:px-6 lg:px-8 mt-16" >
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-cyan-100 py-16 px-4 sm:px-6 lg:px-8 mt-16 " >
+      <div className="max-w-7xl mx-auto sm:mx-4 lg:mx-16">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Text content */}

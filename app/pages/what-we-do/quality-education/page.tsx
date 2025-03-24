@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const QualityEducation = () => {
   return (
     <main className="bg-white">
@@ -15,12 +14,11 @@ const QualityEducation = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-6 sm:py-16 lg:py-24">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
-              Youth Empowerment
+              Quality Education
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              We work to provide young people with the tools, resources, and
-              services they need to succeed and build a brighter future for
-              themselves and their communities.
+              Ensure inclusive and equitable quality education and promote
+              lifelong learning opportunities for all.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -29,7 +27,6 @@ const QualityEducation = () => {
               >
                 Donate Now
               </Link>
-             
             </div>
           </div>
         </div>
@@ -71,31 +68,32 @@ const QualityEducation = () => {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
-                <div className="lg:max-w-lg">
+                <div className="lg:max-w-lg" data-aos="zoom-in-right">
                   <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                     Quality Education
                   </h1>
                   <p className="mt-6 text-gray-700 text-justify">
                     Education is one of the basic rights of an individual in the
                     world. In that way, free education has been introduced in
-                    Sri Lanka. Sri Lanka has a literacy rate of 92%. Sri Lanka&apos;s
-                    education system has undergone many changes over the last
-                    two decades. New educational methods have been introduced
-                    considering the needs of globalization in many aspects of
-                    education policy, curriculum, learning and teaching, school
-                    management, evaluation of student performance, etc.
+                    Sri Lanka. Sri Lanka has a literacy rate of 92%. Sri
+                    Lanka&apos;s education system has undergone many changes
+                    over the last two decades. New educational methods have been
+                    introduced considering the needs of globalization in many
+                    aspects of education policy, curriculum, learning and
+                    teaching, school management, evaluation of student
+                    performance, etc.
                     <br />
                     <br />
-                    In the mindset of such changes in our society, there are many
-                    obstacles such as justice and social issues in getting the
-                    right to education. As a civil society organization, AIMG is
-                    committed to making efforts to remove these barriers through
-                    research.
+                    In the mindset of such changes in our society, there are
+                    many obstacles such as justice and social issues in getting
+                    the right to education. As a civil society organization,
+                    AIMG is committed to making efforts to remove these barriers
+                    through research.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden" data-aos="zoom-in-left">
               <Image
                 width={400}
                 height={400}

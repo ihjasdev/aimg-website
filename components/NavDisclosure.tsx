@@ -8,7 +8,7 @@ import {
 } from "@headlessui/react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
-import { whatwedo, Whoweare } from "@/constants/navdisclosure";
+import { whatwedo, whoweare} from "@/constants/navmenu";
 
 // Add the type definition for the props
 interface NavDisclosureProps {
@@ -87,7 +87,7 @@ function NavDisclosure({ setIsOpen }: NavDisclosureProps) {
           <div className={`mt-2 space-y-1 py-2 text-lg font-medium text-slate-900 transition-all duration-200 ${
             openSection === 'whoweare' ? 'block' : 'hidden'
           }`}>
-            {Whoweare.map((item) => (
+            {whoweare.map((item) => (
               <Link
                 href={item.href}
                 key={item.id}

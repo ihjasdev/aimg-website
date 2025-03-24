@@ -74,7 +74,7 @@ const HumanitarianAid = () => {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
-                <div className="lg:max-w-lg">
+                <div className="lg:max-w-lg" data-aos="zoom-in-right">
                   <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                     Humanitarian Aid
                   </h1>
@@ -94,7 +94,7 @@ const HumanitarianAid = () => {
                 </div>
               </div>
             </div>
-            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden" data-aos="zoom-in-left">
               <Image
                 alt="Humanitarian Aid"
                 src="/Humanitarian.png"
@@ -105,7 +105,7 @@ const HumanitarianAid = () => {
             </div>
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
-                <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify">
+                <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify" data-aos="zoom-in-right">
                   <p>
                     So we have formed our team with proper management to reach
                     out to the people who need such humanitarian assistance with

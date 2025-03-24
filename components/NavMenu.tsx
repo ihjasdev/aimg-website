@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import Image from "next/image"
+import * as React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,20 +13,18 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { whatwedo, whoweare, getinvolves } from "@/constants/navmenu"
-
-
+} from "@/components/ui/navigation-menu";
+import { whatwedo, whoweare, getinvolves } from "@/constants/navmenu";
 
 export function NavMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-      <NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuTrigger>What We Do</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-            <li className="row-span-4 rounded-md">
+              <li className="row-span-4 rounded-md">
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
@@ -40,19 +38,17 @@ export function NavMenu() {
                     />
 
                     {/* < className="h-6 w-6" /> */}
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      AIMG
-                    </div>
+                    <div className="mb-2 mt-4 text-lg font-medium">AIMG</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                      AIMG&apos;s work opens doors to Education, Peace and Harmony,
+                      Youth, and Humanitarian Aid challenges across Sri Lanka.
                     </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
               {whatwedo.map((whatwedo) => (
                 <ListItem
-                  key={whatwedo.title}
+                  key={whatwedo.id}
                   title={whatwedo.title}
                   href={whatwedo.href}
                 >
@@ -66,7 +62,6 @@ export function NavMenu() {
           <NavigationMenuTrigger>Who We Are</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-            
               {whoweare.map((whoweare) => (
                 <ListItem
                   key={whoweare.id}
@@ -102,11 +97,9 @@ export function NavMenu() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        
-        
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -131,6 +124,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
