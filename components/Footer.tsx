@@ -22,7 +22,7 @@ const Footer = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-slate-100 hover:text-slate-400"
+                className="text-slate-400 hover:text-slate-100"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link 
                     href={item.href}
-                    className="text-slate-100 hover:text-slate-400"
+                    className="text-slate-400 hover:text-slate-100"
                   >
                     {item.name}
                   </Link>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-slate-100 hover:text-slate-400"
+                    className="text-slate-400 hover:text-slate-100"
                   >
                     {item.name}
                   </Link>
@@ -73,14 +73,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-slate-100 mb-4">
               Bank Details
             </h3>
-            <p className="text-slate-100 text-sm">
-              <strong>A/c Name:</strong> Ambitious Institution for Moral Generation
+            <p className="text-slate-400 text-sm">
+              <strong className="text-slate-200">A/c Name:</strong> Ambitious Institution for Moral Generation
               <br />
-              <strong>A/c No:</strong> 001 0470914 001
+              <strong className="text-slate-200">A/c No:</strong> 001 0470914 001
               <br />
-              <strong>Bank:</strong> Amana Bank PLC
+              <strong className="text-slate-200">Bank:</strong> Amana Bank PLC
               <br />
-              <strong>Branch:</strong> Kinniya
+              <strong className="text-slate-200">Branch:</strong> Kinniya
             </p>
           </div>
         </div>

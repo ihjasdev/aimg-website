@@ -98,7 +98,7 @@ const ContactPage = () => {
                   </h2>
                   <div className="flex space-x-4">
                     <Link
-                      href="https://www.linkedin.com/company/welford-systems"
+                      href="https://www.linkedin.com/company/aimgeneration"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors"
@@ -106,7 +106,7 @@ const ContactPage = () => {
                       <Linkedin className="w-6 h-6" />
                     </Link>
                     <Link
-                      href="https://www.facebook.com/welfordsystems"
+                      href="https://www.facebook.com/aimgeneration.official"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors"

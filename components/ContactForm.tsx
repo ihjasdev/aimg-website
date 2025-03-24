@@ -161,7 +161,7 @@ const ContactForm = () => {
 
         <Button
           type="submit"
-          className="w-full rounded-lg bg-cyan-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full rounded-lg bg-cyan-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Submit
         </Button>
