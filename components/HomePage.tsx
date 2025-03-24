@@ -13,10 +13,10 @@ const HomePage = () => {
 
   return (
     <main className="bg-white">
-      <section className="relative inset-0 bg-gradient-to-br from-cyan-200 to-cyan-800 mx-3 sm:mx-4 lg:mx-16 mt-4 sm:mt-6 lg:mt-8 rounded-2xl sm:rounded-3xl overflow-hidden ">
+      <section className="relative inset-0 bg-gradient-to-br from-cyan-200 to-cyan-800 mx-3 sm:mx-4 lg:mx-16 mt-4 sm:mt-6 lg:mt-8 rounded-2xl sm:rounded-3xl overflow-hidden">
         <div className="absolute inset-0 bg-cyan-100 opacity-20">
           {/* Shadcn Carousel Component */}
-          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden">
+          <div className="relative w-full h-full">
             <Carousel
               plugins={[plugin.current]}
               onMouseEnter={plugin.current.stop}
@@ -26,12 +26,13 @@ const HomePage = () => {
               <CarouselContent>
                 {carouselImages.map((image, index) => (
                   <CarouselItem key={index} className="md:basis-1/1">
-                    <div className="rounded-2xl sm:rounded-3xl aspect-video relative">
+                    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
                       <Image
                         src={image.src}
                         alt={image.alt}
                         fill
                         className="object-cover"
+                        priority={index === 0}
                       />
                     </div>
                   </CarouselItem>
@@ -40,24 +41,23 @@ const HomePage = () => {
             </Carousel>
           </div>
         </div>
-        {/* </div> */}
 
-        {/* Content */}
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-20 lg:py-32">
+        {/* Content overlay - Update positioning and padding */}
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-8 sm:py-12 md:py-16 lg:py-24">
           <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
               Empowering Communities, Inspiring Generations.
             </h1>
-            <p className="mt-4 sm:mt-6 text-white sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto px-2 sm:px-0">
+            <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base md:text-lg lg:text-xl text-white max-w-2xl mx-auto px-2 sm:px-0">
               At AIMG, we believe in creating a brighter future through
               education, social welfare, and peacebuilding. By uplifting
               communities and nurturing young minds, we strive to inspire
               lasting change for generations to come.
             </p>
-            <div className="mt-8 sm:mt-10">
+            <div className="mt-6 sm:mt-8 md:mt-10">
               <Link
                 href="/pages/donate-now"
-                className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 transition-color"
+                className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 transition-colors"
               >
                 Donate Now
               </Link>

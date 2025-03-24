@@ -11,6 +11,10 @@ import NavDisclosure from "./NavDisclosure";
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleLogoClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="sticky inset-x-0 top-0 z-50 bg-white border-b">
       <nav className="mx-auto max-w-7xl flex items-center justify-between px-3 sm:px-4 py-3 sm:py-4 lg:px-8">
@@ -60,8 +64,15 @@ export function Navbar() {
             <Link
               href="/"
               className="flex items-center gap-2 text-lg font-semibold md:text-base"
+              onClick={handleLogoClick}
             >
-              <Image src="/logo.png" width={137} height={56} alt="logo" />
+              <Image
+                src="/logo.png"
+                width={137}
+                height={56}
+                alt="logo"
+                priority
+              />
             </Link>
             <button
               type="button"
@@ -74,12 +85,13 @@ export function Navbar() {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6">
-              <NavDisclosure />
+              <NavDisclosure setIsOpen={setMobileMenuOpen} />
               {/* Get a Demo */}
               <div className="py-8 border-t">
                 <Link
                   href="/pages/donate-now"
                   className="inline-block w-full rounded-md bg-cyan-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-cyan-500 transition-colors text-center"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Donate Now
                 </Link>
