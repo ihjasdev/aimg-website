@@ -14,11 +14,13 @@ const QualityEducation = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-6 sm:py-16 lg:py-24">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
-              Quality Education
+              Good Governance
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              Ensure inclusive and equitable quality education and promote
-              lifelong learning opportunities for all.
+              At Ambitious Institution for Moral Generation (AIMG), we believe
+              that strong, transparent, and accountable institutions are
+              essential for justice, equality, and inclusive development in Sri
+              Lanka.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -69,67 +71,58 @@ const QualityEducation = () => {
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg" data-aos="zoom-in-right">
-                  <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                    Quality Education
+                  {/* <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                    Good Governance
+                  </h1> */}
+                  <h1 className="mt-2 text-base/7 font-semibold tracking-tight text-pretty text-gray-900 sm:text-2xl">
+                    Strengthening Public Institutions
                   </h1>
-                  <p className="mt-6 text-gray-700 text-justify">
-                    Education is one of the basic rights of an individual in the
-                    world. In that way, free education has been introduced in
-                    Sri Lanka. Sri Lanka has a literacy rate of 92%. Sri
-                    Lanka&apos;s education system has undergone many changes
-                    over the last two decades. New educational methods have been
-                    introduced considering the needs of globalization in many
-                    aspects of education policy, curriculum, learning and
-                    teaching, school management, evaluation of student
-                    performance, etc.
-                    <br />
-                    <br />
-                    In the mindset of such changes in our society, there are
-                    many obstacles such as justice and social issues in getting
-                    the right to education. As a civil society organization,
-                    AIMG is committed to making efforts to remove these barriers
-                    through research.
+                  <p className="mt-6 text-gray-700 mb-6">
+                    AIMG collaborates with public authorities and justice
+                    institutions to build their capacity and improve service
+                    delivery for vulnerable and marginalized groups especially
+                    women and minority communities. We aim to foster a
+                    governance culture that is people-centered, transparent, and
+                    efficient.
+                  </p>
+
+                  <h1 className="mt-2 text-base/7 font-semibold tracking-tight text-pretty text-gray-900 sm:text-2xl">
+                    Legal and Policy Enforcement
+                  </h1>
+                  <p className="mt-6 text-gray-700 mb-6">
+                    We engage in strengthening law enforcement and policy
+                    implementation to ensure that good governance frameworks
+                    deliver results. Our interventions work towards reducing
+                    corruption, improving accountability, and closing gaps in
+                    service access.
+                  </p>
+                  <h1 className="mt-2 text-base/7 font-semibold tracking-tight text-pretty text-gray-900 sm:text-2xl">
+                Civic Awareness and Citizen Engagement
+                  </h1>
+                  <p className="mt-6 text-gray-700">
+                    Through grassroots outreach and community training, we
+                    educate the public about their rights, the importance of
+                    good governance, and how to hold institutions accountable.
+                    By empowering citizens, particularly youth and women, we
+                    promote inclusive decision-making and community-driven
+                    reform.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden" data-aos="zoom-in-left">
+            <div
+              className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+              data-aos="zoom-in-left"
+            >
               <Image
                 width={400}
                 height={400}
-                alt="Quality Education"
-                src="/quality-education.jpg"
+                alt="Good Governance"
+                src="/good-governance.jpg"
                 className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
               />
             </div>
-            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-              <div className="lg:pr-4">
-                <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify">
-                  <p>
-                    For this, we have come forward to act based on long-term
-                    vision, involvement, expansion of thinking, integrated
-                    planning, etc. Also, through the growing digital technology
-                    in the education sector, we are trying to create a suitable
-                    educational environment for the future by implementing many
-                    programs to develop students interest in learning and
-                    explaining its pros and cons among students.
-                  </p>
-                  <p className="mt-8">
-                    AIMG also aims to implement programs such as skill
-                    development, career guidance, and scholarship schemes, along
-                    with students in schools, universities, colleges, and
-                    vocational training institutes along with graduates.
-                    <br />
-                    Not only to create an educated society but also to develop
-                    each individual as a multi-disciplinary personality and
-                    field expert to produce the best leaders needed by society
-                    by working in the education sector. Through education, we
-                    aim to create a moral and civilized society by eradicating
-                    the evils that are growing in society.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
