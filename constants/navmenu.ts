@@ -67,8 +67,8 @@ export const whoweare: { id: number; title: string; href: string; description: s
   export const whatwedo: { id: number; title: string; href: string; description: string }[] = [
     {
       id: 1,
-      title: "Quality Education",
-      href: "/pages/what-we-do/quality-education",
+      title: "Good Governance",
+      href: "/pages/what-we-do/good-governance",
       description:
         "A modal dialog that interrupts the user with important content and expects a response.",
     },
@@ -88,8 +88,8 @@ export const whoweare: { id: number; title: string; href: string; description: s
     },
     {
       id:4,
-      title: "Humanitarian Aid",
-      href: "/pages/what-we-do/humanitarian-aid",
+      title: "Peace and Reconciliation",
+      href: "/pages/what-we-do/peace-reconciliation",
       description:
         "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
     },

@@ -79,20 +79,25 @@ const HomePage = () => {
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              About Ambitious Institution for Moral Generation
+              About Ambitious Institution for Moral Generation(AIMG)
             </h1>
             <p className="mb-8 leading-relaxed text-justify">
-              AIMG (Ambitious Institution for Moral Generation) is a nonprofit
-              organization in Sri Lanka dedicated to empowering communities
-              through education, peacebuilding, and humanitarian aid. With a
-              strong focus on social cohesion, youth development, and economic
-              empowerment, AIMG collaborates with local and international
-              partners to create impactful initiatives. The organization
-              actively supports underprivileged students, promotes dialogue
-              among diverse communities, and fosters professional growth through
-              skill-building programs. Committed to building a better future,
-              AIMG continuously works towards uplifting lives and fostering
-              positive change across Sri Lanka.
+              The Ambitious Institution for Moral Generation (AIMG) is a dynamic
+              civil society organization based in Sri Lanka, committed to
+              building a just, inclusive, and peaceful society. We were founded
+              on the strong belief that empowering communities and strengthening
+              institutions are essential to achieve good governance, human
+              rights protection, sustainable peace, and inclusive development.
+              At AIMG, we recognize that Sri Lanka&apos;s path to reconciliation and
+              progress must be rooted in democratic values, institutional
+              accountability, and social justice particularly for marginalized
+              and vulnerable populations. Our work spans the grassroots to the
+              policy level, engaging with communities, public institutions, and
+              legal systems to bring about meaningful change. Our mission is to
+              promote civic consciousness, protect fundamental rights, and build
+              the capacity of individuals and institutions to foster a society
+              where every person—regardless of gender, ethnicity, or
+              religion can realize their full potential.
             </p>
             <div className="flex justify-center">
               <Link
