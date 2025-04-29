@@ -72,7 +72,7 @@ const HomePage = () => {
             <Image
               className="object-cover object-center rounded-xl"
               alt="hero"
-              src="/intro.jpg"
+              src="/carousel4.jpg"
               width="720"
               height="600"
             />
