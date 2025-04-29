@@ -81,7 +81,7 @@ const HomePage = () => {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               About Ambitious Institution for Moral Generation(AIMG)
             </h1>
-            <p className="mb-8 leading-relaxed text-justify">
+            <p className="mb-8 leading-relaxed ">
               The Ambitious Institution for Moral Generation (AIMG) is a dynamic
               civil society organization based in Sri Lanka, committed to
               building a just, inclusive, and peaceful society. We were founded

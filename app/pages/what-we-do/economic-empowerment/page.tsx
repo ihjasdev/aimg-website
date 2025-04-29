@@ -98,8 +98,8 @@ const EconomicEmpowerment = () => {
               <Image
                 width={400}
                 height={400}
-                alt="Youth Empowerment"
-                src="/youth-empowerment.jpeg"
+                alt="Economic Empowerment"
+                src="/economic-empowerment.jpg"
                 className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
               />
             </div>

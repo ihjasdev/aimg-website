@@ -2,34 +2,50 @@ export const focusAreas = [
   {
     id: 1,
     href: "/pages/what-we-do/good-governance",
-    img: "/good-governance.jpg",
+    img: "/good_governance.jpg",
     title: "Good Governance",
     description:
       "Good Governance is the foundation of sustainable development. We work to ensure that every child has access to Good Governance, regardless of their background or circumstances.",
   },
   {
     id: 2,
-    href: "/pages/what-we-do/peace-and-harmony",
-    img: "/peace-harmony.jpg",
-    title: "Peace and Harmony",
+    href: "/pages/what-we-do/human-rights",
+    img: "/human_rights.jpg",
+    title: "Human Rights",
     description:
-      "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
+      "Defending human rights in Sri Lanka's post-war reality. We fight for dignity and justice for the marginalized - women, youth, minorities, and conflict survivors.",
   },
   {
     id: 3,
-    href: "/pages/what-we-do/youth-empowerment",
-    img: "/youth.jpeg",
-    title: "Youth Empowerment",
+    href: "/pages/what-we-do/economic-empowerment",
+    img: "/economic-empowerment.jpg",
+    title: "Economic Empowerment",
     description:
-      "Youth Empowerment is the key to creating a brighter future. We work to empower young people to reach their full potential and become leaders in their communities.",
+      "We see economic empowerment as a critical step toward justice, dignity, and resilience especially for women and youth from war-affected and economically marginalized communities in Sri Lanka.",
   },
   {
     id: 4,
     href: "/pages/what-we-do/peace-reconciliation",
-    img: "/peace-reconciliation.png",
+    img: "/peace_and_reconciliation.jpg",
     title: "Peace and Reconciliation",
     description:
-      "In post-war Sri Lanka, reconciliation and peacebuilding are crucial for national healing. At AIMG, we champion initiatives that promote social cohesion and inter-community harmony among diverse ethnic and religious groups.",
+      "Building lasting peace in Sri Lanka through justice, healing and unity. We bridge divides to create understanding.",
+  },
+  {
+    id: 5,
+    href: "/pages/what-we-do/research-and-advocacy",
+    img: "/research_and_advocacy.jpg",
+    title: "Research and Advocacy",
+    description:
+      "Research and advocacy are at the core of our mission to drive social transformation. We believe that meaningful change begins with evidence gathered from the ground and shaped into powerful tools for policy engagement and reform.",
+  },
+  {
+    id: 6,
+    href: "/pages/what-we-do/social-indicator",
+    img: "/social_indicator.jpg",
+    title: "Social Indicator",
+    description:
+      " We believe that real change begins with amplifying voices that are too often silenced. Through civic media and public research, we bring forward the stories, opinions, and realities of marginalized communities in Sri Lanka.",
   },
 ];
 
