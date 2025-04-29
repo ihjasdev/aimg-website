@@ -1,14 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
-export const metadata = {
-  title: "Peace and Reconciliation | AIMGeneration",
-  description:
-    "Unity Through Justice, Reconciliation for All - A Future Rooted in Peace.",
-};
-
-const PeaceReconciliation = () => {
+const HumanRights = () => {
   return (
     <main className="bg-white">
       {/* Hero Section */}
@@ -17,14 +11,13 @@ const PeaceReconciliation = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-200 to-cyan-800" />
 
         {/* Content */}
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-28">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-6 sm:py-16 lg:py-24">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
-              Peace & Reconciliation
+              Human Rights
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              Unity Through Justice, Reconciliation for All - A Future Rooted in
-              Peace.
+              Empowering Voices, Demanding Dignity - Together.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -76,22 +69,26 @@ const PeaceReconciliation = () => {
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg" data-aos="zoom-in-right">
                   <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                    Peace & Reconciliation
+                    Human Rights
                   </h1>
                   <p className="mt-6 text-gray-700 text-justify">
-                    We believe that sustainable peace in Sri Lanka can only be
-                    achieved through genuine reconciliation, justice, and mutual
-                    understanding among communities divided by decades of
-                    conflict. Our peacebuilding efforts are rooted in addressing
-                    the legacies of war and promoting inclusive dialogue that
-                    fosters healing and unity.
+                    The promotion and protection of human rights form the
+                    foundation of our work. Rooted in the realities of Sri
+                    Lanka&apos;s post-war context, we advocate for the dignity,
+                    freedom, and justice of communities that have long been
+                    marginalized especially women, youth, ethnic and religious
+                    minorities, and conflict-affected populations.
                     <br />
                     <br />
-                    We work with survivors of violence including torture and
-                    sexual abuse supporting their right to truth, dignity, and
-                    reparations. Through initiatives such as memorialization and
-                    recognition of past injustices, AIMG creates space for
-                    communities to reflect, heal, and rebuild trust.
+                    Our human rights work is built on empowering individuals and
+                    communities to understand, claim, and defend their rights.
+                    We focus on strengthening the social, economic, cultural,
+                    and political rights of those most impacted by inequality
+                    and systemic discrimination. From supporting women-headed
+                    households and survivors of violence to advocating for
+                    transitional justice and redress for victims of past
+                    conflict, AIMG is committed to creating a society where
+                    every individual can live with dignity and security.
                   </p>
                 </div>
               </div>
@@ -103,8 +100,8 @@ const PeaceReconciliation = () => {
               <Image
                 width={400}
                 height={400}
-                alt="Youth Empowerment"
-                src="/good_governance.jpg"
+                alt="Human Rights"
+                src="/human_rights.jpg"
                 className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
               />
             </div>
@@ -115,27 +112,27 @@ const PeaceReconciliation = () => {
                   data-aos="zoom-in-right"
                 >
                   <p>
-                    Our work extends to fostering interfaith and interethnic
-                    harmony. Through platforms like the Interfaith Dialogue
-                    Circle, we bring together diverse religious and ethnic
-                    communities to strengthen pluralism, deepen respect for one
-                    another, and protect rights related to religion, language,
-                    and cultural identity.
+                    Through grassroots civic education, we raise awareness on
+                    constitutional and international human rights standards,
+                    which helps people become informed and active
+                    rights-holders. We engage with youth and women as key agents
+                    of change, enabling them to speak out against violations and
+                    participate meaningfully in social and political life.
                   </p>
                   <p className="mt-8">
-                    Central to our approach is the active participation of
-                    communities especially women, youth, and other marginalized
-                    groups. We ensure their voices are heard and their needs are
-                    addressed in both national and international peace
-                    processes. By monitoring peacebuilding developments and
-                    raising awareness at the grassroots level, AIMG empowers
-                    communities to become active contributors to reconciliation
-                    and long-term stability.
+                    AIMG also provides legal empowerment and support to those
+                    seeking justice. We document human rights abuses, offer
+                    legal aid, and campaign for reforms that improve access to
+                    justice. Our advocacy extends from the local to the global,
+                    ensuring that the voices and experiences of marginalized
+                    communities influence both national policies and
+                    international human rights agendas.
                     <br />
                     <br />
-                    Our vision of peace is one that is inclusive, just, and
-                    grounded in collective memory and mutual respect a future
-                    where no one is left behind.
+                    By defending rights and amplifying grassroots voices, AIMG
+                    is building a more just, inclusive, and accountable
+                    society one where every person matters and no one is left
+                    behind.
                   </p>
                 </div>
               </div>
@@ -147,4 +144,4 @@ const PeaceReconciliation = () => {
   );
 };
 
-export default PeaceReconciliation;
+export default HumanRights;

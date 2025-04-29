@@ -70,27 +70,41 @@ export const whoweare: { id: number; title: string; href: string; description: s
       title: "Good Governance",
       href: "/pages/what-we-do/good-governance",
       description:
-        "A modal dialog that interrupts the user with important content and expects a response.",
+        "Empowering Justice, Ensuring Accountability - Building Transparent Governance for All.",
     },
     {
       id: 2,
-      title: "Peace and Harmony",
-      href: "/pages/what-we-do/peace-and-harmony",
+      title: "Social Indicator and Civic Media",
+      href: "/pages/what-we-do/social-indicator",
       description:
-        "For sighted users to preview content available behind a link.",
+        "From Margins to Movement - Media, Research, and Real Change.",
     },
     {
       id:3,
-      title: "Youth Empowerment",
-      href: "/pages/what-we-do/youth-empowerment",
+      title: "Economic Empowerment",
+      href: "/pages/what-we-do/economic-empowerment",
       description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        "Empowering Communities, Transforming Futures - Building Resilience Through Opportunity.",
     },
     {
       id:4,
       title: "Peace and Reconciliation",
       href: "/pages/what-we-do/peace-reconciliation",
       description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+        "Unity Through Justice, Reconciliation for All - A Future Rooted in Peace.",
+    },
+    {
+      id:5,
+      title: "Research and Advocacy ",
+      href: "/pages/what-we-do/research-and-advocacy",
+      description:
+        "Research That Reveals, Reforms That Empower - Shaping Policies for the People.",
+    },
+    {
+      id:6,
+      title: "Human Rights ",
+      href: "/pages/what-we-do/human-rights",
+      description:
+        "Empowering Voices, Demanding Dignity - Together.",
     },
   ]

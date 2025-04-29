@@ -24,7 +24,7 @@ export function NavMenu() {
           <NavigationMenuTrigger>What We Do</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              <li className="row-span-4 rounded-md">
+              <li className="row-span-2 rounded-md">
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"

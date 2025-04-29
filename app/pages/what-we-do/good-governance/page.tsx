@@ -1,8 +1,8 @@
+import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
-const QualityEducation = () => {
+const GoodGovernance = () => {
   return (
     <main className="bg-white">
       {/* Hero Section */}
@@ -17,10 +17,8 @@ const QualityEducation = () => {
               Good Governance
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              At Ambitious Institution for Moral Generation (AIMG), we believe
-              that strong, transparent, and accountable institutions are
-              essential for justice, equality, and inclusive development in Sri
-              Lanka.
+              Empowering Justice, Ensuring Accountability - Building Transparent
+              Governance for All.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -71,41 +69,25 @@ const QualityEducation = () => {
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg" data-aos="zoom-in-right">
-                  {/* <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                  <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                     Good Governance
-                  </h1> */}
-                  <h1 className="mt-2 text-base/7 font-semibold tracking-tight text-pretty text-gray-900 sm:text-2xl">
-                    Strengthening Public Institutions
                   </h1>
-                  <p className="mt-6 text-gray-700 mb-6">
-                    AIMG collaborates with public authorities and justice
-                    institutions to build their capacity and improve service
-                    delivery for vulnerable and marginalized groups especially
-                    women and minority communities. We aim to foster a
-                    governance culture that is people-centered, transparent, and
-                    efficient.
-                  </p>
-
-                  <h1 className="mt-2 text-base/7 font-semibold tracking-tight text-pretty text-gray-900 sm:text-2xl">
-                    Legal and Policy Enforcement
-                  </h1>
-                  <p className="mt-6 text-gray-700 mb-6">
-                    We engage in strengthening law enforcement and policy
-                    implementation to ensure that good governance frameworks
-                    deliver results. Our interventions work towards reducing
-                    corruption, improving accountability, and closing gaps in
-                    service access.
-                  </p>
-                  <h1 className="mt-2 text-base/7 font-semibold tracking-tight text-pretty text-gray-900 sm:text-2xl">
-                Civic Awareness and Citizen Engagement
-                  </h1>
-                  <p className="mt-6 text-gray-700">
-                    Through grassroots outreach and community training, we
-                    educate the public about their rights, the importance of
-                    good governance, and how to hold institutions accountable.
-                    By empowering citizens, particularly youth and women, we
-                    promote inclusive decision-making and community-driven
-                    reform.
+                  <p className="mt-6 text-gray-700 text-justify">
+                    We are committed to advancing transparent, accountable, and
+                    inclusive governance in Sri Lanka. We believe that strong
+                    public institutions are the cornerstone of justice,
+                    equality, and sustainable development—especially for
+                    marginalized and underserved communities.
+                    <br />
+                    <br />
+                    Our approach to good governance focuses on strengthening the
+                    capacity of public institutions and justice systems to
+                    ensure fair, efficient, and people-centered service
+                    delivery. We work closely with government authorities, local
+                    officials, and judicial actors to foster a culture of
+                    accountability and responsiveness—prioritizing the needs of
+                    women, youth, and minority groups who often face barriers in
+                    accessing public services.
                   </p>
                 </div>
               </div>
@@ -117,12 +99,44 @@ const QualityEducation = () => {
               <Image
                 width={400}
                 height={400}
-                alt="Good Governance"
-                src="/good-governance.jpg"
+                alt="Youth Empowerment"
+                src="/good_governance.jpg"
                 className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
               />
             </div>
-            
+            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="lg:pr-4">
+                <div
+                  className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify"
+                  data-aos="zoom-in-right"
+                >
+                  <p>
+                    AIMG actively engages in efforts to improve legal and policy
+                    enforcement by promoting anti-corruption practices,
+                    advocating for institutional reform, and closing gaps in
+                    public service delivery. We support mechanisms that promote
+                    transparency and ensure that governance systems function
+                    effectively at both national and local levels.
+                  </p>
+                  <p className="mt-8">
+                    At the community level, we raise awareness and build civic
+                    knowledge by educating citizens about their rights and
+                    responsibilities. Through grassroots outreach,
+                    capacity-building workshops, and public forums, we empower
+                    individuals—particularly women and young people—to engage
+                    meaningfully in governance processes, influence
+                    decision-making, and demand accountability from those in
+                    power.
+                    <br />
+                    <br />
+                    By bridging the gap between citizens and institutions, AIMG
+                    is helping to build a more democratic, just, and
+                    participatory governance landscape in Sri Lanka—where every
+                    voice counts and every institution serves the public good.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -130,4 +144,4 @@ const QualityEducation = () => {
   );
 };
 
-export default QualityEducation;
+export default GoodGovernance;

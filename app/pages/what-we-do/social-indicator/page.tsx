@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
-const PeaceAndHarmony = () => {
+const SocialIndicator = () => {
   return (
     <main className="bg-white">
       {/* Hero Section */}
@@ -14,12 +14,10 @@ const PeaceAndHarmony = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-28">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
-              Peace and Harmony
+              Social Indicator & Civic Media
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              Promote peaceful and inclusive societies for sustainable
-              development, provide access to justice for all and build
-              effective, accountable and inclusive institutions at all levels.
+              From Margins to Movement - Media, Research, and Real Change.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -71,64 +69,61 @@ const PeaceAndHarmony = () => {
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg" data-aos="zoom-in-right">
                   <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                    Peace and Harmony
+                    Social Indicator and Civic Media
                   </h1>
                   <p className="mt-6 text-gray-700 text-justify">
-                    Sri Lanka is a multi-ethnic country. The country is
-                    inhabited by followers of four of the world&apos;s major
-                    religions. Multi-ethnic cultures, languages, religions, and
-                    diverse characteristics are found in this country.
-                    Characteristics like coexistence, unity, and understanding
-                    are seen as the first basic thing for the development of Sri
-                    Lanka.
+                    We believe that real change begins with amplifying voices
+                    that are too often silenced. Through civic media and public
+                    research, we bring forward the stories, opinions, and
+                    realities of marginalized communities in Sri Lanka.
                     <br />
                     <br />
-                    Sri Lanka was subjected to thirty years of armed conflict
-                    due to such rifts in Sri Lanka&apos;s past history. Due to this,
-                    Sri Lanka was backward economically, politically, and
-                    socially.
+                    Kinniyan.lk, our pioneering civic media platform, enables
+                    community-led storytelling that reflects lived experiences
+                    often ignored by mainstream media. By equipping citizens
+                    with tools for civic journalism, we create space for local
+                    voices to challenge dominant narratives and drive grassroots
+                    accountability.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden" data-aos="zoom-in-left">
+            <div
+              className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+              data-aos="zoom-in-left"
+            >
               <Image
-                alt="peace and harmony"
-                src="/peace-harmony.jpg"
+                alt="social indicator"
+                src="/social_indicator.jpg"
                 className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
-                width = {500}
-                height = {500}
+                width={500}
+                height={500}
               />
-            
-          </div>
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div className="lg:pr-4">
-              <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify" data-aos="zoom-in-right">
-                <p>
-                  AIMG has been carrying out work programs aimed at building the
-                  qualities of understanding and unity among communities with a
-                  view to building coexistence.
-                </p>
-                <p className="mt-6">
-                  AIMG also aims to implement programs such as skill
-                  development, career guidance, and scholarship schemes, along
-                  with students in schools, universities, colleges, and
-                  vocational training institutes along with graduates.
-                  <br />
-                  <br/>
-                  AIMG is trying to create awareness among the people about a
-                  certain society that is becoming selfish through the division
-                  in the society which is hindering the development of our
-                  country.
-                  <br />
-                  <br/>
-                  AIMG prepares the rising young generation for a prosperous
-                  future with social understanding and thinking about the future
-                  of the country.
-                </p>
+            </div>
+            <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+              <div className="lg:pr-4">
+                <div
+                  className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify"
+                  data-aos="zoom-in-right"
+                >
+                  <p>
+                    Our Social Indicator unit complements this work through
+                    rigorous public opinion research. We conduct national
+                    surveys and track key social and political trends, providing
+                    data that informs public discourse and policymaking.
+                    Flagship initiatives like the Peace Confidence Index help
+                    shape a more transparent, inclusive, and evidence-driven
+                    approach to governance and reconciliation.
+                  </p>
+                  <p className="mt-6">
+                    This intersection of media and research empowers communities
+                    not only to tell their own stories but to influence the
+                    systems that shape their lives.
+                    <br />
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -136,4 +131,4 @@ const PeaceAndHarmony = () => {
   );
 };
 
-export default PeaceAndHarmony;
+export default SocialIndicator;

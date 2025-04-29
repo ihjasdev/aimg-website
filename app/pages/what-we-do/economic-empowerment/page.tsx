@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-const YouthEmpowerment = () => {
+const EconomicEmpowerment = () => {
   return (
     <main className="bg-white">
       {/* Hero Section */}
@@ -14,12 +14,11 @@ const YouthEmpowerment = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-6 sm:py-16 lg:py-24">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 max-w-4xl mx-auto">
-              Youth Empowerment
+              Economic Empowerment
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
-              We work to provide young people with the tools, resources, and
-              services they need to succeed and build a brighter future for
-              themselves and their communities.
+              Empowering Communities, Transforming Futures - Building Resilience
+              Through Opportunity.
             </p>
             <div className="mt-8 sm:mt-10 flex items-center justify-center gap-x-6">
               <Link
@@ -71,26 +70,31 @@ const YouthEmpowerment = () => {
               <div className="lg:pr-4">
                 <div className="lg:max-w-lg" data-aos="zoom-in-right">
                   <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-                    Youth Empowerment
+                    Economic Empowerment
                   </h1>
                   <p className="mt-6 text-gray-700 text-justify">
-                    Youths are important strengths for our prosperous country
-                    Sri Lanka. Every young person has different strengths,
-                    characteristics, and personalities. People who can face
-                    crisis situations. The future leaders of our motherland. The
-                    power of the youth is the basis for the various changes that
-                    have taken place in the world.
+                    We see economic empowerment as a critical step toward
+                    justice, dignity, and resilience especially for women and
+                    youth from war-affected and economically marginalized
+                    communities in Sri Lanka.
                     <br />
                     <br />
-                    It is AIMG&apos;s aim to make effective use of this great
-                    season. Young people dream of a future for themselves and
-                    tend to find ways to achieve it. That is why AIMG strives to
-                    empower youth to achieve a better future for them.
+                    Our work focuses on building practical skills and creating
+                    opportunities that enable individuals to lead sustainable
+                    livelihoods. Through tailored training in small business
+                    development, digital literacy, and professional
+                    competencies, we help participants enter the workforce or
+                    establish their own ventures. By promoting innovation and
+                    digital inclusion, we connect aspiring entrepreneurs to
+                    broader markets and modern tools for growth.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden" data-aos="zoom-in-left">
+            <div
+              className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+              data-aos="zoom-in-left"
+            >
               <Image
                 width={400}
                 height={400}
@@ -101,28 +105,33 @@ const YouthEmpowerment = () => {
             </div>
             <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
               <div className="lg:pr-4">
-                <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify" data-aos="zoom-in-right">
+                <div
+                  className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg text-justify"
+                  data-aos="zoom-in-right"
+                >
                   <p>
-                    We try to identify their strengths and potential and train
-                    them accordingly. We want to create mentally and morally
-                    strong, well-educated, skilled professionals and active
-                    citizens in Sri Lanka. We are trying to eliminate the
-                    weakness and disorder among the youth. We have designed many
-                    programs for their future needs such as industrial and
-                    educational sectors, proper guidance and counseling, etc.
+                    AIMG also provides targeted financial support and mentorship
+                    to women and youth ready to launch micro or small-scale
+                    enterprises. We equip them with the knowledge and confidence
+                    to manage resources, make strategic decisions, and build
+                    long-term financial independence. Our programs emphasize
+                    leadership development and resource control especially for
+                    women ensuring they are not just participants, but leaders
+                    in the local economy.
                   </p>
                   <p className="mt-8">
-                    We have designed many programs to strengthen the connection
-                    between the personalities found in the community and the
-                    people. AIMG&apos;s mission is to develop talented and
-                    resourceful individuals who are relevant to Sri Lanka as a
-                    whole.
+                    At the core of our approach is a rights-based framework that
+                    recognizes economic participation as a fundamental human
+                    right. We raise awareness about economic justice and support
+                    individuals in asserting their right to equal access, fair
+                    treatment, and sustainable opportunities in the labor
+                    market.
                     <br />
                     <br />
-                    AIMG is trying to create awareness among the people about a
-                    certain society that is becoming selfish through the
-                    division in the society which is hindering the development
-                    of our country.
+                    Through this work, AIMG contributes to reducing
+                    vulnerability, fostering local economic development, and
+                    enabling communities to shape their own futures with
+                    autonomy and pride.
                   </p>
                 </div>
               </div>
@@ -134,4 +143,4 @@ const YouthEmpowerment = () => {
   );
 };
 
-export default YouthEmpowerment;
+export default EconomicEmpowerment;
