@@ -1,4 +1,3 @@
-
 'use client'
 
 // import type { Metadata } from "next";
@@ -12,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
 import ScrollToTop from "@/components/ScrollToTop"; // Adjust path if needed
+import { Toaster } from "@/components/ui/sonner"
 
 
 const geistSans = Geist({
@@ -53,7 +53,17 @@ export default function RootLayout({
       <ScrollToTop />
       <NewsletterCTA />
       <Footer />
-      
+      <Toaster 
+        position="bottom-center"
+        toastOptions={{
+          className: 'bg-white dark:bg-gray-800',
+          style: {
+            border: '1px solid #e5e7eb',
+            padding: '16px',
+            color: '#1f2937',
+          },
+        }}
+      />
     </div>
   </body>
 </html>

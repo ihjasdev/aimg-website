@@ -12,8 +12,10 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
+import { toast } from "sonner";
 
 const FormSchema = z.object({
   name: z.string().min(2, {
@@ -34,7 +36,8 @@ const FormSchema = z.object({
 });
 
 const ContactForm = () => {
-  // 1. Define your form.
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -47,11 +50,52 @@ const ContactForm = () => {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof FormSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(data: z.infer<typeof FormSchema>) {
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        toast.success("Your message has been sent successfully.", {
+          duration: 5000,
+          className: 'bg-green-50 dark:bg-green-900/20',
+          style: {
+            border: '1px solid #86efac',
+            color: '#166534',
+          },
+        });
+        form.reset();
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      const errorMessage = error instanceof Error 
+        ? error.message 
+        : "Something went wrong. Please try again.";
+      
+      toast.error(errorMessage, {
+        duration: 5000,
+        className: 'bg-red-50 dark:bg-red-900/20',
+        style: {
+          border: '1px solid #fca5a5',
+          color: '#991b1b',
+        },
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
+
 
   return (
     <Form {...form}>
@@ -161,9 +205,10 @@ const ContactForm = () => {
 
         <Button
           type="submit"
+          disabled={isSubmitting}
           className="w-full rounded-lg bg-cyan-600 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-cyan-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Submit
+          {isSubmitting ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </Form>
