@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <main className="bg-white">
       <section className="relative inset-0 bg-gradient-to-br from-cyan-200 to-cyan-800 mx-3 sm:mx-4 lg:mx-16 mt-4 sm:mt-6 lg:mt-8 rounded-2xl sm:rounded-3xl overflow-hidden">
-        <div className="absolute inset-0 bg-cyan-100 opacity-40">
+        <div className="absolute inset-0 bg-cyan-100 opacity-80">
           {/* Shadcn Carousel Component */}
           <div className="relative w-full h-full">
             <Carousel
