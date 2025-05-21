@@ -1,7 +1,7 @@
 export const focusAreas = [
   {
     id: 1,
-    href: "/pages/what-we-do/good-governance",
+    href: "/what-we-do/good-governance",
     img: "/good_governance.jpg",
     title: "Good Governance",
     description:
@@ -9,7 +9,7 @@ export const focusAreas = [
   },
   {
     id: 2,
-    href: "/pages/what-we-do/human-rights",
+    href: "/what-we-do/human-rights",
     img: "/human_rights.jpg",
     title: "Human Rights",
     description:
@@ -17,7 +17,7 @@ export const focusAreas = [
   },
   {
     id: 3,
-    href: "/pages/what-we-do/economic-empowerment",
+    href: "/what-we-do/economic-empowerment",
     img: "/economic-empowerment.jpg",
     title: "Economic Empowerment",
     description:
@@ -25,7 +25,7 @@ export const focusAreas = [
   },
   {
     id: 4,
-    href: "/pages/what-we-do/peace-reconciliation",
+    href: "/what-we-do/peace-reconciliation",
     img: "/peace_and_reconciliation.jpg",
     title: "Peace and Reconciliation",
     description:
@@ -33,7 +33,7 @@ export const focusAreas = [
   },
   {
     id: 5,
-    href: "/pages/what-we-do/research-and-advocacy",
+    href: "/what-we-do/research-and-advocacy",
     img: "/research_and_advocacy.jpg",
     title: "Research and Advocacy",
     description:
@@ -41,7 +41,7 @@ export const focusAreas = [
   },
   {
     id: 6,
-    href: "/pages/what-we-do/social-indicator",
+    href: "/what-we-do/social-indicator",
     img: "/social_indicator.jpg",
     title: "Social Indicator",
     description:

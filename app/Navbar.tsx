@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Menu, X } from "lucide-react";
-import { NavMenu } from "./NavMenu";
-import NavDisclosure from "./NavDisclosure";
+import { NavMenu } from "../components/NavMenu";
+import NavDisclosure from "../components/NavDisclosure";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -45,7 +45,7 @@ export function Navbar() {
         {/* Get a Demo */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            href="/pages/donate-now"
+            href="/donate-now"
             className="rounded-md bg-cyan-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-cyan-500 transition-colors"
           >
             Donate Now
@@ -89,7 +89,7 @@ export function Navbar() {
               {/* Get a Demo */}
               <div className="py-8 border-t">
                 <Link
-                  href="/pages/donate-now"
+                  href="/donate-now"
                   className="inline-block w-full rounded-md bg-cyan-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-cyan-500 transition-colors text-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >

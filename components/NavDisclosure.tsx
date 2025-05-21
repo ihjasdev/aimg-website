@@ -123,21 +123,21 @@ function NavDisclosure({ setIsOpen }: NavDisclosureProps) {
             openSection === 'getinvolved' ? 'block' : 'hidden'
           }`}>
             <Link
-              href="/pages/get-involve/donate"
+              href="/get-involve/donate"
               className="block rounded-md p-2 hover:bg-gradient-to-b from-muted/50 to-muted"
               onClick={handleLinkClick}
             >
               Donate
             </Link>
             <Link
-              href="/pages/get-involve/volunteer"
+              href="/get-involve/volunteer"
               className="block rounded-md p-2 hover:bg-gradient-to-b from-muted/50 to-muted"
               onClick={handleLinkClick}
             >
               Volunteer
             </Link>
             <Link
-              href="/pages/get-involve/careers"
+              href="/get-involve/careers"
               className="block rounded-md p-2 hover:bg-gradient-to-b from-muted/50 to-muted"
               onClick={handleLinkClick}
             >
@@ -149,7 +149,7 @@ function NavDisclosure({ setIsOpen }: NavDisclosureProps) {
 
       <Disclosure as="div" className="mt-4 border-0 border-none">
         <Link 
-          href="/pages/contact-us"
+          href="/contact-us"
           onClick={handleLinkClick}
         >
           <span className="text-xl font-semibold text-slate-900">

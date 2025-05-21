@@ -93,7 +93,7 @@ export function NavMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link 
-              href="/pages/contact-us" 
+              href="/contact-us" 
               className={navigationMenuTriggerStyle()}
             >
               Contact Us

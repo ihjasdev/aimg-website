@@ -56,7 +56,7 @@ const HomePage = () => {
             </p>
             <div className="mt-6 sm:mt-8 md:mt-10">
               <Link
-                href="/pages/donate-now"
+                href="/donate-now"
                 className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 transition-colors"
               >
                 Donate Now
@@ -101,7 +101,7 @@ const HomePage = () => {
             </p>
             <div className="flex justify-center">
               <Link
-                href="/pages/who-we-are/our-history"
+                href="/who-we-are/our-history"
                 className="inline-flex items-center justify-center rounded-lg bg-cyan-600 px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 transition-color"
               >
                 Read More
